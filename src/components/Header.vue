@@ -2,7 +2,10 @@
   <nav class="nav-bar">
     <div class="nav-header" :class="themeColor">
       <div class="navbar-top-left">
-        <a href="javascript:void(0)" class="logo">智能分析平台</a>
+        <a href="javascript:void(0)" class="logo">
+          <img src="../../static/img/logo.png" alt="" width="50" height="52">
+          <p class="logoText">智能分析平台</p>
+        </a>
       </div>
       <ul class="navbar-links navbar-left">
         <li>
@@ -49,7 +52,7 @@
       return {
         searchText: '',
         themeColors: ['theme-default', 'theme-yellow', 'theme-blue', 'theme-green', 'theme-dark'],
-        themeColor: 'theme-default',
+        themeColor: 'theme-yellow',
         slideRight: ''
       }
     },
@@ -79,14 +82,22 @@
         width: 220px
         float: left
         background: #292929
-        .logo
-          display: block
-          padding-left: 20px
-          height: 60px
-          line-height: 60px
-          font-size: 24px
-          color: #fff
-          text-decoration: none
+       .logo
+         display: block
+         padding: 5px
+         width: 100%
+         text-decoration: none
+         display: table
+         & img
+           margin-left: 20px
+           display: table-cell
+         .logoText
+           display: table-cell
+           font-size: 16px
+           color: #fff
+           line-height: 35px
+           height: 35px
+           vertical-align: middle
       .navbar-left
         float: left
         & li
