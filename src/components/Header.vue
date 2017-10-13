@@ -2,7 +2,7 @@
   <nav class="nav-bar">
     <div class="nav-header" :class="themeColor">
       <div class="navbar-top-left">
-        <a href="javascript:void(0)" class="logo">智投平台</a>
+        <a href="javascript:void(0)" class="logo">智能分析平台</a>
       </div>
       <ul class="navbar-links navbar-left">
         <li>
