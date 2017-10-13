@@ -18,7 +18,25 @@
     "jquery": "^3.2.1",
     "moment": "^2.18.1",
     "vue": "^2.4.2",
-    "vue-router": "^2.7.0"
+    "vue-router": "^2.7.0",
+
+    "assert": "^1.4.1",
+    "cloneextend": "0.0.3",
+    "co": "^4.6.0",
+    "crypto-js": "^3.1.6",
+    "dubbo-node-client": "0.0.2",
+    "eleme-openapi-sdk": "0.0.1",
+    "exceljs": "^0.5.1",
+    "joi": "^8.0.5",
+    "lodash": "^4.11.1",
+    "morgan": "^1.7.0",
+    "mysql": "^2.10.2",
+    "node-xlsx": "^0.10.0",
+    "request-promise": "^4.2.1",
+    "restify": "^4.0.4",
+    "restify-cookies": "^0.2.2",
+    "sequelize": "^3.21.0",
+    "swagger-tools": "*"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",

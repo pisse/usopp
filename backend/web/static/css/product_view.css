@@ -1,0 +1,253 @@
+
+.container .nav>a{
+	display: inline-block;
+	height: 34px;
+	line-height: 34px;
+	padding:0 10px;
+	border-radius: 4px;
+}
+.container .nav>a:hover{
+	text-decoration: none;
+}
+.container .nav .cur{
+	background-color: #337cd6;
+}
+.product_view, .apply_flow{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	top:100%;
+	z-index: 100;
+	background-color: #fff;
+	box-shadow: 1px 1px 1px #eee inset;
+	transition:top 1s 0s linear;
+	-webkit-transition:top 1s 0s linear;
+}
+.mod_parallax .product_view_container{
+	width: 70%;
+	min-width: 1290px;
+	margin: 0 auto;
+	padding: 0 auto;
+}
+.mod_parallax .product_view_container .view_hd{
+	display: block;
+	width: 100%;
+	height: 55px;
+	line-height: 55px;
+	font-size: 14px;
+	color: #777;
+}
+
+.mod_parallax .product_view_container .view_bd>table{
+	width: 100%;
+	border: 1px solid #eee;
+}
+.mod_parallax .product_view_container .view_bd>table td{
+	padding-left: 10px;
+}
+.mod_parallax .product_view_container .view_bd>table tr:nth-of-type(1){
+	height: 52px;
+}
+.mod_parallax .product_view_container .view_bd>table tr:nth-of-type(1) td{
+	line-height: 52px;
+	border-bottom: 1px solid #eee;
+}
+.mod_parallax .product_view_container .view_bd>table tr:nth-of-type(1) td:nth-of-type(1){
+	background-color: #eee;
+}
+.mod_parallax .product_view_container .view_bd>table tr td:nth-of-type(2){
+	border:  1px solid #eee;
+	border-top:none;
+	border-bottom: none;
+}
+.mod_parallax .product_view_container .view_bd>table tr:nth-of-type(1) td:nth-of-type(2){
+	background-color: #f6f6f6;
+}
+
+.apply_flow_container {margin: 30px;}
+.apply_flow_container h2{font-size: 18px;margin: 15px 0;}
+.apply_flow_container p{margin-bottom: 5px;}
+.apply_flow_container .intend_1em{text-indent: 1em;}
+.apply_flow_container .wrap{border-collapse: collapse;border-spacing: 0;empty-cells: show;}
+.apply_flow_container .wrap td{border: 1px solid #000000;height: 22px;line-height: 22px;vertical-align: middle; width: 800px;}
+.apply_flow_container .wrap .column1{background-color:#B8B8B8;width: 300px;}
+
+
+.apply_flow_container .flow_intro{margin:0 20px;padding: 15px;background: #e4e4e4;}
+.apply_flow_container .form_container{}
+.apply_flow_container .form_container .option_item{
+	position: relative;
+	padding-left: 103px;
+}
+.apply_flow_container .form_container .option_item .item_hd{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 93px;
+	padding-right: 10px;
+	line-height: 30px;
+	text-align: right
+}
+.apply_flow_container .form_container .option_item .item_bd{
+	line-height: 30px;
+}
+.apply_flow_container .form_container .option_item .item_bd .l-text-wrapper{
+	height: 30px;
+	padding-top: 5px;
+}
+.apply_flow_container .form_container .option_item .item_bd .l-text-wrapper .l-text{
+	border: 1px solid #ccc;
+}
+.apply_flow_container .form_container .option_item .item_bd a{
+	display: inline-block;
+	height: 26px;
+	margin-right: 10px;
+	padding: 0 12px;
+	color: #777;
+	line-height: 25px;
+	border-radius: 26px;
+	text-decoration: none;
+}
+.apply_flow_container .form_container .option_item .item_bd .flow_ipt{
+	font-family: \5FAE\8F6F\96C5\9ED1,Tahoma,Verdana;
+	font-size: 14px;
+	padding: 0 15px;
+	height: 22px;
+	border-radius: 4px;
+	border: 1px #ccc solid;
+	min-width: 300px;
+}
+
+.apply_flow_container .form_container .option_item .item_bd input[name=depart]{
+	width: 600px
+}
+.apply_flow_container .form_container .option_item .item_bd input[name=mail],
+.apply_flow_container .form_container .option_item .item_bd input[name=report],
+.apply_flow_container .form_container .option_item .item_bd input[name=platform]{
+	width: 380px
+}
+.apply_flow_container .form_container .option_item .item_bd input[type=file]{
+	border: 0;
+	padding: 0;
+	width: 180px;
+}
+.apply_flow_container .form_container .option_item .item_bd .selected
+{
+	background-color: #337CD6;
+	color: #fff;
+}
+.apply_flow_container .form_container .option_item.btns{
+	margin-top: 10px;
+}
+.apply_flow_container .form_container .option_item .btn, .apply_flow_container .form_container .option_item .close
+{
+	display: inline-block;
+	padding: 5px 10px;
+	background-color: #337CD6;
+	color: #fff;
+	border-radius: 5px;
+	margin-right: 15px;
+}
+
+
+.mod_parallax .form_product_item{
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+.mod_parallax .form_product_item1{
+	vertical-align: top;
+	margin-top: -137px;
+}
+.mod_parallax .form_product_item .item_hd{
+	height: 30px;
+	line-height: 30px;
+	margin-top: 10px;
+}
+.mod_parallax .checkbox_selecter label{
+	display: block;
+	height: 18px;
+	margin-top: 10px;
+	font-size: 13px;
+
+}
+.mod_parallax .checkbox_selecter input{
+	outline: none;
+	margin-right: 8px;
+	-webkit-appearance:none;
+	appearance:none;
+	position: relative;
+	display: inline-block;
+	width: 17px;
+	height: 17px;
+	border:1px #ccc  solid;
+	border-radius: 5px;
+	background-color: #fff;
+}
+.mod_parallax .checkbox_selecter input:hover{
+	border-color: #337cd6;
+}
+.mod_parallax .checkbox_selecter input:checked{
+	background-color: #eaf2fb;
+	border-color: #337cd6;
+}
+.mod_parallax .checkbox_selecter input:checked:before{
+	content: "";
+	position: absolute;
+	top: 2px;
+	left: 5px;
+	width: 3px;
+	height: 7px;
+	border: 2px solid #1b6cd1;
+	border-top: none;
+	border-left: none;
+	transform:rotate(45deg);
+	-webkit-transform:rotate(45deg);
+}
+
+.mod_parallax .checkbox_selecter .txt{
+	display: inline-block;
+	vertical-align: middle;
+	margin-top: -11px;
+}
+
+.mod_parallax .filter_result{
+	position: relative;
+	height: 55px;
+
+}
+.mod_parallax .filter_result .filter_result_inner{
+	float:right;
+	width: 100%;
+	height: 51px;
+}
+.mod_parallax .filter_result .action{
+	float: right;
+	padding-top: 10px;
+	margin-right: 20px;
+}
+.mod_parallax .filter_result .action .send_email{
+	display: block;
+	height: 34px;
+	line-height: 34px;
+	padding: 0 10px;
+	background-color: #337cd6;
+	color: #fff;
+	border-radius: 5px;
+}
+.mod_parallax .filter_result .send_email:hover{
+	text-decoration: none;
+}
+.mod_parallax .filter_result_inner .result_list{
+	float: left;
+	height: 34px;
+	max-width: 84%;
+	line-height: 34px;
+	margin-top: 10px;
+	margin-left: 30px;
+}
+.mod_parallax .filter_result_inner .result_list label{
+	color: #337cd6;
+	margin-right: 10px;
+}
