@@ -8,6 +8,7 @@ const service = axios.create({
   timeout: 50000
 })
 let loadingInstance
+
 // request拦截器，实现loading加载
 service.interceptors.request.use(config => {
   loadingInstance = Loading.service({})
