@@ -3,8 +3,7 @@
     <div class="nav-header" :class="themeColor">
       <div class="navbar-top-left">
         <a href="javascript:void(0)" class="logo">
-          <img src="../../static/img/logo.png" alt="" width="50" height="52">
-          <p class="logoText">智能分析平台</p>
+          <img src="../../static/img/logo.png" alt="" width="60" height="54">
         </a>
       </div>
       <ul class="navbar-links navbar-left">
@@ -82,22 +81,14 @@
         width: 220px
         float: left
         background: #292929
-       .logo
-         display: block
-         padding: 5px
-         width: 100%
-         text-decoration: none
-         display: table
-         & img
-           margin-left: 20px
-           display: table-cell
-         .logoText
-           display: table-cell
-           font-size: 16px
-           color: #fff
-           line-height: 35px
-           height: 35px
-           vertical-align: middle
+        .logo
+          display: block
+          padding-top: 10px
+          width: 100%
+          text-decoration: none
+          text-align: center
+          & img
+            display: inline-block
       .navbar-left
         float: left
         & li
