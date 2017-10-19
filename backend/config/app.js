@@ -25,9 +25,9 @@ conf.defaults = {
     contactEmail: 'huangzhihua@jd.com',
     salt: '1234567890TIANZI',
     routePath: '../routes',
-    title: 'MBA-NodeJS-后台API',
+    title: 'Usoop',
     api_basePath: '/node',
-    description: 'Api的nodejs实现'
+    description: '我得了一种不编码就会死掉的病！'
 };
 
 exports.get = function get(env, obj) {
