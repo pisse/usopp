@@ -4,26 +4,30 @@
 
 "use strict";
 var tool = require('cloneextend'),
-    conf = {};
+  conf = {};
 conf.production = {
-    host: 'ai.baidu.com',
-    port: process.env.port || 40000
+  host: 'ai.baidu.com',
+  port: process.env.port || 40000,
+  highchartPort: 40001
 };
 conf.jarpay = {
-    host: 'ai.baidu.com',
-    port: process.env.port || 40000
+  host: 'ai.baidu.com',
+  port: process.env.port || 40000,
+  highchartPort: 40001
 };
 conf.pre = {
-    host: 'ai.baidu.com',
-    port: process.env.port || 40000
+  host: 'ai.baidu.com',
+  port: process.env.port || 40000,
+  highchartPort: 40001
 };
 conf.development = {
-    host: 'localhost',
-    port: process.env.port || 40000
+  host: 'localhost',
+  port: process.env.port || 40000,
+  highchartPort: 40001
 };
 conf.defaults = {};
 
 exports.get = function get(env, obj) {
-    var settings = tool.cloneextend(conf.defaults, conf[env || 'development']);
-    return ('object' === typeof obj) ? tool.cloneextend(settings, obj) : settings;
+  var settings = tool.cloneextend(conf.defaults, conf[env || 'development']);
+  return ('object' === typeof obj) ? tool.cloneextend(settings, obj) : settings;
 }

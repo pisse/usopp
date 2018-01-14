@@ -5,7 +5,7 @@
 var path = require('path');
 var Sequelize = require('sequelize');
 var CookieParser = require('restify-cookies');
-var cors = require('../server/cors.js');
+// var cors = require('../server/cors.js');
 var cookieSession = require('restify-cookie-session')({
   debug : false,
   ttl   : 60 * 30
@@ -46,7 +46,7 @@ module.exports = function Aza(options) {
 
     self.server.use(CookieParser.parse);
     self.server.use(cookieSession.sessionManager);
-    self.server.use(cors({
+    self.server.use(self.restify.CORS({
       credentials: true
       // headers: ['Session-Id']
       }
