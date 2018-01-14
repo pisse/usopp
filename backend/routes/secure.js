@@ -38,6 +38,39 @@ module.exports = [
     }
   },
   {
+    path: '/secure/login',
+    method: 'get',
+    meta: {
+      use: true,
+      auth: false
+    },
+    controller: {
+      name: 'secure',
+      action: 'login'
+    },
+    swagger: {
+      tags: ["安全管理"],
+      summary: '登入',
+      description: '登入',
+      produces: [
+        'application/json'
+      ]
+    },
+    parameters: {
+      query: joi.object({
+        code: joi.string().description('用户登录凭证code')
+      })
+    },
+    responses: {
+      200: {
+        description: '',
+        schema: {
+          $ref: '#/definitions/ApiResponse'
+        }
+      }
+    }
+  },
+  {
     path: '/secure/logout',
     method: 'get',
     meta: {

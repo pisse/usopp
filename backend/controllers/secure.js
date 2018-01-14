@@ -35,6 +35,9 @@ function secure() {
     return erp
   }
 
+  self.login = function * () {
+
+  }
   self.logout = function* () {
     this.response.setCookie('username', '', {
       path: '/',
