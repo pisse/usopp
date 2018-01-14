@@ -22,7 +22,7 @@ var HighchartServer = {
         deferred.resolve(base64png);
       });
     } catch (err) {
-      throw new aza.BizError('生成highchart img错误');
+      throw new Core.BizError('生成highchart img错误');
     }
     return deferred.promise;
   }

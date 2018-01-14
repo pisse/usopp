@@ -11,7 +11,6 @@ var Config = {
         var path = '';
 
         paths.push(basePath + '/config');
-        //paths.push(basePath + '/node_modules/aza-node/config');
 
         var config = {};
 

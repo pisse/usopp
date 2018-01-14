@@ -11,9 +11,9 @@ var controllerManager = require('./controllerManager');
 
 var Router = {
   routes: [],
-  register: function (server, middlewares) {
+  register: function (server, middlewares, options) {
     this.middlewares = middlewares;
-    var routes = this.getRoutes();
+    var routes = this.getRoutes(options.cwd);
     for (var i = 0; i < routes.length; i++) {
       if (routes[i].meta.use) {
         this.create(server, routes[i]);
@@ -74,7 +74,7 @@ var Router = {
         }
       }).catch(function (err) {
         console.error(err)
-        if (err instanceof aza.BizError) {
+        if (err instanceof Core.BizError) {
           response.send(200, {code: 0, message: err.message});
           return next();
         }
@@ -105,7 +105,10 @@ var Router = {
     }
 
     var modules = getConfig('app', 'modules');
-    if (!modules) return routes;
+    if (!modules) {
+      this.routes = routes;
+      return routes;
+    }
 
     for (var i = 0; i < modules.length; i++) {
       var module = modules[i];

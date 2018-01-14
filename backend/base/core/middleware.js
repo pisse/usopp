@@ -45,7 +45,7 @@ var Middleware = {
                         return next();
                     }).catch(function (err) {
                         console.error(err)
-                        if (err instanceof aza.BizError) {
+                        if (err instanceof Core.BizError) {
                             return next(err);
                         }
                         return next(new restify.InternalServerError('接口异常!'));

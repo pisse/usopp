@@ -16,7 +16,7 @@ var cookieSession = require('restify-cookie-session')({
   ttl   : 2
 }); */
 
-module.exports = function Aza(options) {
+module.exports = function Server(options) {
   var self = this;
   self.BizError = require('./BizError').BizError;
 
@@ -40,7 +40,7 @@ module.exports = function Aza(options) {
     //创建服务器
     self.restify = require('restify');
     self.server = self.restify.createServer({
-      name: getConfig('app', 'name') || 'aza-node-server',
+      name: getConfig('app', 'name') || 'restify-node-server',
       version: getConfig('app', 'version') || '1.0.0'
     });
 
@@ -100,7 +100,7 @@ module.exports = function Aza(options) {
       } else if (args.length === 2) {
         arg = args[1]
       }
-      if (arg instanceof aza.BizError) return;
+      if (arg instanceof self.BizError) return;
       if (arg instanceof Error) {
         console.error(arg);
         /*arg.body = {
@@ -160,7 +160,7 @@ module.exports = function Aza(options) {
           middleware.swaggerUi({swaggerUiDir: swaggerUIPath})
         );
       });
-      require('./router').register(self.server, [middleware.swaggerMetadata(), swaggerValidator]);
+      require('./router').register(self.server, [middleware.swaggerMetadata(), swaggerValidator],options);
     });
 
     self.server.get('/api-docs', function (req, res, next) {

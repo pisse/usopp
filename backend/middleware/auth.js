@@ -17,17 +17,17 @@ module.exports = function* () {
       return true
     } else {
       if (permissions.length == 0) {
-        return this.next(new aza.restify.UnauthorizedError('未登录'));
+        return this.next(new Core.restify.UnauthorizedError('未登录'));
       }
       // var menu_ids = (new Buffer(permissions, 'base64').toString() || '').split(',');
       if (permissions.indexOf(privilege_menu_id) == -1) {
-        return this.next(new aza.restify.UnauthorizedError('未有权限'));
+        return this.next(new Core.restify.UnauthorizedError('未有权限'));
       }
     }
     // var sid = this.req.query.sid || this.req.params.sid;
-    /* user = yield aza.services.uic.getUser(sid);
+    /* user = yield Core.services.uic.getUser(sid);
     if (!user) {
-      return this.next(new aza.restify.UnauthorizedError('未登录'));
+      return this.next(new Core.restify.UnauthorizedError('未登录'));
     }*/
   } else {
     user = {

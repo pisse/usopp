@@ -7,7 +7,7 @@ var util = require('util');
 var error = module.exports = {};
 error.BaseError = function() {
     var tmp = Error.apply(this, arguments);
-    tmp.name = this.name = 'AzaBaseError';
+    tmp.name = this.name = 'BaseError';
 
     this.message = tmp.message;
     if (Error.captureStackTrace)
@@ -17,7 +17,7 @@ util.inherits(error.BaseError, Error);
 
 error.BizError = function (message) {
     error.BaseError.apply(this, arguments);
-    this.name = 'AzaBizError';
+    this.name = 'BizError';
     this.message = message;
 };
 util.inherits(error.BizError, error.BaseError);
