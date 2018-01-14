@@ -2,11 +2,11 @@
  * Created by lawrence on 5/7/16.
  */
 
-var dubboClient = require('dubbo-node-client');
+// var dubboClient = require('dubbo-node-client');
 
 module.exports = {
     init: function () {
-        dubboClient.config(getConfig('dubbo').get(process.env.NODE_ENV));
+        /*dubboClient.config(getConfig('dubbo').get(process.env.NODE_ENV));
 
         var env = process.env.NODE_ENV;
         if (env == 'production') {
@@ -18,7 +18,7 @@ module.exports = {
 
         //获取serivce
         this.userProvider = dubboClient.getService('com.eatjoys.uic.api.AccountService', '1.0.0-' + env);
-        require('util').log('Intializing uic service...,Intializing config: \n', getConfig('dubbo').get(env));
+        require('util').log('Intializing uic service...,Intializing config: \n', getConfig('dubbo').get(env));*/
     },
     getUser: function (sid) {
         var self = this;

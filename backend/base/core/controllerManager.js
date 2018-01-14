@@ -48,6 +48,7 @@ module.exports = {
             var files = fs.readdirSync(path);
             this._create(path, files);
         }
+        return this.controllers;
     },
     _create: function (path, files) {
         this.controllers = this.controllers || {};
@@ -57,9 +58,9 @@ module.exports = {
             var arrTemp = filename.split('.');
             var extension = arrTemp.pop();
 
-            if (extension == 'js') {
+            if (extension == 'js' && filename[0] !== '_') {
                 var key = arrTemp.pop();
-                Controller = require(path + '/' + file);
+                var Controller = require(path + '/' + file);
                 var obj = new Controller();
                 obj._construct && obj._construct();
                 var mIndex = path.indexOf('modules');

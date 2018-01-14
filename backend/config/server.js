@@ -6,15 +6,15 @@
 var tool = require('cloneextend'),
     conf = {};
 conf.production = {
-    host: 'n.mba.jd.com',
+    host: 'ai.baidu.com',
     port: process.env.port || 40000
 };
 conf.jarpay = {
-    host: 'n.mba.jd.com',
+    host: 'ai.baidu.com',
     port: process.env.port || 40000
 };
 conf.pre = {
-    host: 'n.mba.jd.com',
+    host: 'ai.baidu.com',
     port: process.env.port || 40000
 };
 conf.development = {

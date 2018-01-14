@@ -8,7 +8,7 @@ var restify = require('restify');
 
 var Middleware = {
     register: function (server, cwd) {
-      var fs = require('fs');
+        var fs = require('fs');
         var paths = [];
         var basePath = cwd || process.cwd();
 
@@ -45,7 +45,7 @@ var Middleware = {
                         return next();
                     }).catch(function (err) {
                         console.error(err)
-                        if (err instanceof Core.BizError) {
+                        if (err instanceof aza.BizError) {
                             return next(err);
                         }
                         return next(new restify.InternalServerError('接口异常!'));

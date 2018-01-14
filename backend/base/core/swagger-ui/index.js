@@ -30,7 +30,7 @@ module.exports.compile = function (routes, options) {
                 email: getConfig('app', 'contactEmail') || 'huangzhihua@jd.com'
             },
             description: getConfig('app', 'description'),
-            title: getConfig('app', 'title') || 'restify-node',
+            title: getConfig('app', 'title') || 'aza-node',
             version: getConfig('app', 'version') || '1.0.0'
         }
     };

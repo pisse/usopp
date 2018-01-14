@@ -73,6 +73,8 @@ function SwaggerDoc() {
                             p.schema = {$ref: '#/definitions/' + schemaName};
                         }
                         parameters.push(p);
+                    } else if (item == 'file') {
+                      parameters.push(content);
                     } else {
                         var schema = convert(content);
                         for (var key in schema.properties) {
