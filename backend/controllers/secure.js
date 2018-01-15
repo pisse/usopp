@@ -1,5 +1,6 @@
 var _ = require('lodash');
 var rq = require('request-promise');
+var Config = require('../config/app.js').get();
 
 function secure() {
   var self = this;
@@ -36,7 +37,20 @@ function secure() {
   }
 
   self.login = function * () {
-
+    var code = this.requestParams.code.value;
+    console.log(Config)
+    var options = {
+      method: 'POST',
+      uri: 'https://api.weixin.qq.com/sns/jscode2session',
+      form: {
+        appid: Config.appId,
+        secret: Config.appSelect,
+        js_code: code,
+        grant_type: 'authorization_code'
+      }
+    };
+    var res = yield rq(options);
+    return res;
   }
   self.logout = function* () {
     this.response.setCookie('username', '', {
