@@ -27,7 +27,7 @@ module.exports.compile = function (routes, options) {
         },
         info: {
             contact: {
-                email: getConfig('app', 'contactEmail') || 'huangzhihua@jd.com'
+                email: getConfig('app', 'contactEmail') || 'huangzhihua@baidu.com'
             },
             description: getConfig('app', 'description'),
             title: getConfig('app', 'title') || 'restify-node',

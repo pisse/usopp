@@ -10,10 +10,10 @@ function secure() {
 
     var cookies = this.request.cookies;
     //域名信息
-    var ssoDomain = 'sso.jd.com';
-    var retUrl = this.requestParams.retUrl.value || 'http://mba.jd.com/mba/mba.php';
+    var ssoDomain = 'sso.baidu.com';
+    var retUrl = this.requestParams.retUrl.value || 'http://mba.baidu.com/mba/mba.php';
     //秘钥信息
-    var verify_ticket_url = 'http://ssa.jd.com/sso/ticket/verifyTicket';
+    var verify_ticket_url = 'http://ssa.baidu.com/sso/ticket/verifyTicket';
     var options = {
       method: 'POST',
       uri: verify_ticket_url,
@@ -58,9 +58,9 @@ function secure() {
       expires: (new Date(new Date().getTime() - 60 * 60))
     })
 
-    this.response.setCookie('sso.jd.com', '', {
+    this.response.setCookie('sso.baidu.com', '', {
       path: '/',
-      domain: '.jd.com',
+      domain: '.baidu.com',
       expires: (new Date(new Date().getTime() - 60 * 60))
     })
     return ''

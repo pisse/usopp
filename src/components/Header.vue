@@ -51,8 +51,8 @@
   import Services from '@/api/services'
   import _request from '../pages/mixin/request.js'
   import {checkLogin, logOut} from '@/api/login'
-  const BASE_URL = 'http://zt.mba.jd.com'
-  const LOGIN_HREF = 'http://ssa.jd.com/sso/login?ReturnUrl=http://zt.mba.jd.com'
+  const BASE_URL = 'http://zt.mba.baidu.com'
+  const LOGIN_HREF = 'http://ssa.baidu.com/sso/login?ReturnUrl=http://zt.mba.baidu.com'
   export default {
     name: 'Header',
     data () {

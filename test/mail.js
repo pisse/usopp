@@ -6,7 +6,7 @@ var nodemailer = require('nodemailer');
 
 
 var smtpConfig = {
-  host: 'smtp.jd.com',
+  host: 'smtp.baidu.com',
   //port: 587,
   secure: false, // upgrade later with STARTTLS
   auth: {

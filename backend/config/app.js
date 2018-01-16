@@ -22,7 +22,7 @@ conf.pre = {
 }
 conf.defaults = {
   name: 'notifyServer',
-  contactEmail: 'huangzhihua@jd.com',
+  contactEmail: 'huangzhihua@baidu.com',
   salt: '1234567890TIANZI',
   routePath: '../routes',
   title: 'Usoop',

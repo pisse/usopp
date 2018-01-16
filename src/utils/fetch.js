@@ -1,6 +1,6 @@
 import axios from 'axios'
 import {Loading, Message} from 'element-ui'
-const domainMBA = 'http://n.mba.jd.com'
+const domainMBA = 'http://n.mba.baidu.com'
 
 // create axios instance
 const service = axios.create({
