@@ -1,6 +1,6 @@
 
-var DomainMBA = 'http://mba.baidu.com/'
-var DomainNODE = 'http://zt.mba.baidu.com/'
+var DomainMBA = 'http://hotel.baidu.com/'
+var DomainNODE = 'http://zt.hotel.baidu.com/'
 
 export default {
   isLogin: DomainNODE + 'node/secure/setCookie',

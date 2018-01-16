@@ -1,7 +1,7 @@
 import fetch from '@/utils/fetch'
 import Service from './services'
 
-const LOGOUT_HREF = 'http://ssa.baidu.com/sso/login?ReturnUrl=http://zt.mba.baidu.com'
+const LOGOUT_HREF = 'http://ssa.baidu.com/sso/login?ReturnUrl=http://zt.hotel.baidu.com'
 export function checkLogin (query) {
   return fetch({
     url: Service.isLogin,

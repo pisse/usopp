@@ -11,7 +11,7 @@ function secure() {
     var cookies = this.request.cookies;
     //域名信息
     var ssoDomain = 'sso.baidu.com';
-    var retUrl = this.requestParams.retUrl.value || 'http://mba.baidu.com/mba/mba.php';
+    var retUrl = this.requestParams.retUrl.value || 'http://hotel.baidu.com/hotel/hotel.php';
     //秘钥信息
     var verify_ticket_url = 'http://ssa.baidu.com/sso/ticket/verifyTicket';
     var options = {

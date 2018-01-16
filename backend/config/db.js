@@ -6,38 +6,38 @@ var tool = require('cloneextend'),
     conf = {};
 conf.production = {
     mysql: {
-      host: 'bquency0m.mysql.jddb.com',
-      user: 'category_fre_rw',
-      password: '4zfvA&ibg6pzvylcycfAnbzdwxkztm',
-      database: 'mbadb',
+      host: '',
+      user: '',
+      password: '&',
+      database: '',
       port: 3358
     },
     redis: {
         host: '127.0.0.1',
         port: 6379,
-        password: '99a9676a734fcdbd53802189be0984fc'
+        password: ''
     }
 };
 conf.jarpay = {
     mysql: {
-      host: 'bquency0m.mysql.jddb.com',
-      user: 'category_fre_rw',
-      password: '4zfvA&ibg6pzvylcycfAnbzdwxkztm',
-      database: 'mbadb',
+      host: '',
+      user: '',
+      password: '&',
+      database: '',
       port: 3358
     },
     redis: {
-        host: 'r-uf6143436c3e2ef4.redis.rds.aliyuncs.com',
+        host: '',
         port: 6379,
-        password: 'Jarpay112233'
+        password: ''
     }
 };
 conf.pre = {
     mysql: {
-      host: 'bquency0m.mysql.jddb.com',
-      user: 'category_fre_rw',
-      password: '4zfvA&ibg6pzvylcycfAnbzdwxkztm',
-      database: 'mbadb',
+      host: '',
+      user: '',
+      password: '',
+      database: '',
       port: 3358
     },
     redis: {}
@@ -47,7 +47,7 @@ conf.development = {
       host: 'localhost',
       user: 'root',
       password: '123456',
-      database: 'mba2',
+      database: '',
       port: 3306
     },
     redis: {}

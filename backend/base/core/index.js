@@ -64,7 +64,7 @@ module.exports = function Server(options) {
       next();
     });
     // static server
-    self.server.get(/\/mba\/.?/, self.restify.serveStatic({
+    self.server.get(/\/hotel\/.?/, self.restify.serveStatic({
       directory: './views',
       default: 'index.html'
     }));
