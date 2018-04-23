@@ -8,10 +8,12 @@
       "instances": 1,
       "exec_mode": "cluster", // or fork
       "script": "index.js",
-      "error_file": "/Users/huangzhihua/usopp/error.log",
-      "out_file": "/Users/huangzhihua/usopp/logs/out.log",
+      "error_file": "/data/logs/usopp/error.log",
+      "out_file": "/data/logs/usopp/logs/out.log",
       //"one_launch_only": "true",
       "autorestart": false,
+      "watch": ["backend/controllers", "backend/routes"],
+      "ignore_watch": ["node_modules", "tmp"],
       "env": {
         "NODE_ENV": "development"
       },

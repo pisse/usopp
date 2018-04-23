@@ -5,6 +5,13 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 test/unit/coverage
+src/
+web/
+config/
+test/
+build/
+tmp/
+
 
 # Editor directories and files
 .idea
